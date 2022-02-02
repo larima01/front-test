@@ -1,0 +1,13 @@
+.App {
+	padding: 6.5rem 12.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@media (max-width: 567px) {
+	.App {
+		padding: 6.5rem 1.25rem;
+	}
+}

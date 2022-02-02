@@ -1,0 +1,60 @@
+:root {
+	--Primary: 215, 79%, 31%, 1;
+	--gray: 0, 0%, 60%, 1;
+	--lightBlue: 215, 79%, 31%, 0.47;
+	--light: 0, 0%, 100%;
+}
+
+.NewUser {
+	display: flex;
+	width: 100%;
+}
+
+.NewUser__left {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.9rem;
+	margin-right: 1.8rem;
+}
+
+.NewUser__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.NewUser__content > label {
+	color: hsl(var(--Primary));
+	margin-bottom: 0.6rem;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.NewUser__content > input[type='text'] {
+	padding: 0.6rem 1.25rem;
+	border: 0.5px solid rgba(17, 70, 143, 0.47);
+	border-radius: 0.3rem;
+}
+
+.NewUser__content > input[type='date'] {
+	padding: 0.6rem 1.25rem;
+	border: 0.5px solid rgba(17, 70, 143, 0.47);
+	border-radius: 0.3rem;
+}
+
+.NewUser__content > input[type='text']::placeholder {
+	color: hsl(var(--gray));
+}
+
+/* Right section */
+.NewUser__right {
+	margin-top: 35px;
+}
+
+.NewUser__right > button {
+	background-color: hsl(var(--Primary));
+	color: hsl(var(--light));
+	padding: 0.6rem 3.25rem;
+	border: none;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
